@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduBridge | Profesjonalne CV</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/edu-bridge.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+<!-- font family Roboto -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet">
+<!-- font family Poppins -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<style>
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .about-meta {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.about .about-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .about .about-title {
+    font-size: 2rem;
+  }
+}
+
+.about .about-description {
+  margin-bottom: 2rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.about .feature-list-wrapper {
+  margin-bottom: 2rem;
+}
+
+.about .feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about .feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about .feature-list li i {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+.about .profile .profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about .profile .profile-name {
+  font-size: 1.125rem;
+  margin: 0;
+  line-height: normal;
+}
+
+.about .profile .profile-position {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: normal;
+}
+
+.about .contact-info {
+  padding: 1rem 1.5rem;
+  background-color: var(--surface-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+}
+
+.about .contact-info i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.about .contact-info .contact-label {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: normal;
+}
+
+.about .contact-info .contact-number {
+  font-weight: 600;
+  margin: 0;
+  line-height: normal;
+}
+
+.about .image-wrapper {
+  position: relative;
+}
+.rounded-4{
+  border-radius: 14px;
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper {
+    padding-left: 0;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper .images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper .main-image {
+    margin-left: 0;
+  }
+}
+
+.about .image-wrapper .small-image {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 45%;
+  border: 8px solid var(--surface-color);
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper .small-image {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+  }
+}
+
+.about .image-wrapper .experience-badge {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  min-width: 200px;
+  animation: experience-float 3s ease-in-out infinite;
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper .experience-badge {
+    position: static;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.about .image-wrapper .experience-badge h3 {
+  color: var(--contrast-color);
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 0.5;
+}
+
+.about .image-wrapper .experience-badge h3 span {
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+.about .image-wrapper .experience-badge p {
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+  line-height: normal;
+}
+
+@keyframes experience-float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.max-w-800{
+    max-width: 800px;
+    margin: auto;
+}
+
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients .swiper-slide img {
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.clients .swiper-slide img:hover {
+  transform: scale(1.25);
+}
+
+.clients .swiper-wrapper {
+  height: auto;
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: color-mix(in srgb, #fefefe, transparent 80%);
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Call To Action Section
+--------------------------------------------------------------*/
+.call-to-action {
+  padding: 80px 0;
+    position: relative;
+    clip-path: inset(0);
+    /* min-height: 30rem; */
+    /* margin: 60px auto; */
+    border-radius: 39px;
+    overflow: hidden;
+     /* background: #253669; */
+}
+
+.call-to-action img {
+  position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* z-index: 1; */
+    opacity: 0;
+}
+
+.call-to-action:not(.no-cta) :before {
+  content: "";
+  /* background: color-mix(in srgb, var(--background-color), transparent 50%); */
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.call-to-action .container {
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action h3 {
+  font-size: 28px;
+  font-weight: 700;
+  /* color: #ffffff; */
+}
+
+.call-to-action p {
+  color: #ffffff;
+}
+
+.call-to-action .cta-btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 6px;
+  transition: 0.5s;
+  margin: 10px;
+    /* border: 2px solid #ffffff; */
+    color: #ffffff;
+    text-decoration: none;
+    background: #253669;
+}
+
+/* .call-to-action .cta-btn:hover {
+  border: 2px solid #ffffff;
+} */
+
+.professiocal-cv-banner{
+  background-image: url('/images/prof-cv-banner.jpeg');
+
+}
+.client-logs-wrapper{
+  display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.client-logs-wrapper .logo-item {
+    max-width: 124px;
+}
+.client-logs-wrapper .logo-item img{
+  cursor: default;
+  transition: 0.288s ease all;
+  max-height: 50px;
+}
+.client-logs-wrapper .logo-item img:hover{
+  transform: scale(1.2);
+}
+</style>
+</head>
+<body>
+  <header class="bg-white header-fixed fixed-top" id="header">
+    <nav class="navbar navbar-expand-lg px-2">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="./images/EduBridge-logo.png" width="300" class="img-cover" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-three-dots-vertical"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="process.html">Proces Aplikacyjny</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offering.html">Usługi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-menu" href="professional-cv.html">Profesjonalne CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">O nas</a>
+                    </li>
+                </ul>
+                <div>
+                    <a type="button" class="btn btn-primary" href="contact.html">Skontaktuj się z nami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+ <!-- Banner section -->
+ <section class="banner-section">
+  <div class="about-banner professiocal-cv-banner banner-bg-content inner-page-banner">
+    <div class="banner-content p-2 text-center align-items-center">
+      <h1 class="mb-5">Twój pierwszy krok do sukcesu zawodowego</h1>
+      <p class="sub-title">Zainwestuj w CV, które przybliży Cię do wymarzonej pracy</p>
+      <!-- <div class="banner-btn-group">
+          <button type="button" class="btn btn-primary">Apply Now <i class="bi bi-arrow-right"></i></button>
+          <button type="button" class="btn btn-primary">Explore Courses <i class="bi bi-arrow-right"></i></button>
+      </div> -->
+      <!-- <div class="page-name-banner">
+        Profesjonalne CV
+      </div> -->
+  </div>
+  </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="about section pt-80 pb-80">
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+            <div class="row gy-4 align-items-center justify-content-between">
+    
+                <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+                    <!-- <span class="about-meta">Profesjonalne CV</span> -->
+                    <h2 class="about-title">Pozwól nam zadbać o Twoją przyszłość zawodową</h2>
+                    <p class="about-description">Twoje CV to kluczowy element w procesie rekrutacyjnym – to od niego zależy, czy pracodawca zdecyduje się zaprosić Cię na rozmowę. Przygotujemy dokument, który wyróżni Cię na tle innych kandydatów, podkreślając Twoje osiągnięcia, umiejętności i potencjał. Dzięki naszym ekspertom Twoje CV będzie przejrzyste, profesjonalne i dostosowane do wymagań wymarzonej firmy.</p>  
+                </div>
+    
+                <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="image-wrapper">
+                        <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                            <img src="/images/professioanal-cv-about.jpg" alt="Business Meeting"
+                                class="img-fluid main-image rounded-4">
+                            
+                        </div>
+                        <div class="experience-badge floating">
+                            <h3>95%</h3>
+                            <p>naszych klientów dostało zaproszenie na rozmowę</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section><!-- /About Section -->
+
+<!-- Clients Section -->
+<section id="clients" class="clients section bg-white pt-80 pb-80">
+
+  <!-- Section Title -->
+<div class="container section-title text-center" data-aos="fade-up">
+  <h2>Pomogliśmy naszym klientom zdobyć pracę w najlepszych firmach</h2>
+  <p>Teraz możemy pomóc Tobie</p>
+</div><!-- End Section Title -->
+
+  <div class="container pt-2" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-logos">
+     
+      <div class="client-logs-wrapper align-items-center mb-4">
+        <div class="logo-item p-2"><img src="assets/img/clients/google-logo.png" class="img-fluid" alt=""></div>
+        <div class="logo-item p-2"><img src="/images/Amazon-Logo.png" class="img-fluid" alt=""></div>
+        <div class="logo-item p-1"><img src="assets/img/clients/_jp-morgan-logo.png" class="img-fluid" alt=""></div>
+        <div class="logo-item"><img src="/images/_rothschild-and-co-vector-logo.png" class="img-fluid" alt=""></div>
+        <div class="logo-item p-2"><img src="assets/img/clients/_Deloitte-logo.png" class="img-fluid" alt=""></div>
+        <div class="logo-item"><img src="assets/img/clients/Accenture-logo.png" class="img-fluid" alt=""></div>
+        
+      </div>
+      <div class="client-logs-wrapper align-items-center">
+        <div class="logo-item"><img src="/images/Procter_&_Gamble_logo.svg.png" class="img-fluid" alt=""></div>
+        <div class="logo-item"><img src="/images/Visa-Logo.png" class="img-fluid" alt=""></div>
+        <div class="logo-item"><img src="assets/img/clients/_Santander-logo.png" class="img-fluid" alt=""></div>
+        <div class="logo-item p-2"><img src="/images/_Jefferies-Logo-Official-black-1x1.png" class="img-fluid" alt=""></div>
+        <div class="logo-item"><img src="assets/img/clients/ING-logo.png" class="img-fluid" alt=""></div>
+        <div class="logo-item"><img src="assets/img/clients/volkswagen-logo.png" class="img-fluid" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Clients Section -->
+
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action no-cta section container dark-background">
+
+  <!-- <img src="assets/img/cta-bg.jpg" alt=""> -->
+
+  <div class="container-div position-relative">
+    <div class="row justify-content-center">
+      <div class="col-xl-10">
+        <div class="text-center">
+          <h3>Zrób pierwszy krok w kierunku swojej wymarzonej kariery</h3>
+          <a class="cta-btn" href="contact.html">Zamów swoje profesjonalne CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Call To Action Section -->
+
+<footer class="bg-primary">
+  <div class="footer-wrapper container">
+      <div class="footer-logo">
+          <img src="./images/EduBridge-white-logo.png" class="w-100" alt="">
+      </div>
+      <div class="row text-white">
+        
+          <div class="col-lg-12 quick-links">
+              <!-- <h6>Quick Links</h6> -->
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="process.html">Proces Aplikacyjny</a></li>
+                  <li><a href="offering.html">Usługi</a></li>
+                  <li><a href="professional-cv.html">Profesjonalne CV</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="blogs.html">Blog</a></li>
+                  <li><a href="about-us.html">O nas</a></li>
+                  <li><a href="contact.html">Skontaktuj się z nami</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="footer-copyright container">
+      <p>EduBridge © <span id="current-year"></span> | Wszystkie prawa zastrzeżone |  <a href="terms-condition.html">Regulamin</a> | <a href="privacy-policy.html">Polityka Prywatności</a></p>
+  </div>
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-double-up"></i> Powrót na górę strony</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- Vendor JS Files -->
+<!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+<!-- Main JS File -->
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
