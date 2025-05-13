@@ -171,7 +171,7 @@ header .navbar-nav .nav-link{
     padding-top: 4rem;
 }
 .banner-bg-content{
-  background-image: url('/images/landing-banner.jpg');
+  background-image: url('../assets/images/banners/index.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -360,6 +360,12 @@ header .navbar-nav .nav-link{
 .orange-color{
     color: #F98149;
 }
+.blue-color-h5{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    color: #253669;
+}
 
 .hiw-steps-list .hiw-steps h5{
     font-size: 35px;
@@ -410,32 +416,54 @@ header .navbar-nav .nav-link{
 
 
 /* Respresentative section */
-.respresentative-section .card-img{
-    border-radius: 16px;
-    max-width: 100%;
-    width: 100%;
-    max-height: 340px;
-    object-fit: cover;
+.respresentative-section {
+    padding: 40px 0;
 }
+
+.respresentative-section .card-img {
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 992px) {
+    .respresentative-section .card-img {
+        max-width: 100%;
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .respresentative-section .card-img {
+        max-width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .respresentative-section .card-img {
+        max-width: 80%;
+        height: 180px;
+        margin: 0 auto;
+    }
+}
+
 .respresentative-section .grid-lists{
     max-width: 560px;
 }
-.respresentative-section .grid-lists .grid-list{
+
+.respresentative-section .grid-lists .grid-list {
     display: flex;
-    align-items: center;
-    margin-bottom: 40px;
+    align-items: flex-start;
+    margin-bottom: 24px;
 }
-.respresentative-section .grid-lists .grid-list .icon-placeholder{
-    /* width: 60px; */
-    /* height: 60px; */
-    /* border-radius: 50%; */
-    /* background: #FBFBFB; */
-    /* box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12); */
+
+.respresentative-section .grid-lists .grid-list .icon-placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 24px;
-    flex: 0 0 auto;
+    margin-right: 16px;
     font-size: 20px;
     color: #253669;
 }
@@ -574,7 +602,7 @@ header .navbar-nav .nav-link{
 }
 /* start of offering page styles */
 .offering-banner{
-  background-image: url('/images/Main\ picture.jpg');
+  background-image: url('../assets/images/banners/onas.webp');
 }
 .offering-list{
     display: grid;
@@ -761,3 +789,9 @@ header .navbar-nav .nav-link{
   .timeline-steps-wrapper .timeline-steps-row.timeline-steps-row-reverse .timeline-description{
     text-align: right;
   }
+
+.timeline-description-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}

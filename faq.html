@@ -1,141 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TDPBQK4F');</script>
+    <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EduBridge | FAQ</title>
-
-  <!-- Bootstrap CSS -->
+  <meta name="description" content="FAQ - najczęstsze pytania o aplikację na studia za granicą. Sprawdź kluczowe informacje o wymaganiach, dokumentach i wsparciu, które oferujemy na każdym etapie rekrutacji!">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/edu-bridge.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" href="./favicon.ico" type="image/x-icon" />
-<!-- font family Roboto -->
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-  rel="stylesheet">
-<!-- font family Poppins -->
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-<!-- Vendor CSS Files -->
-<!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-<style>
-    /*--------------------------------------------------------------
-# Faq Section
---------------------------------------------------------------*/
-.faq .faq-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--heading-color);
-}
-
-.faq .faq-description {
-  font-size: 1rem;
-  color: var(--default-color);
-  margin-bottom: 2rem;
-}
-
-.faq .faq-arrow {
-  color: var(--primary-color);
-}
-
-.faq .faq-container .faq-item {
-  background-color: #25366914;
-  position: relative;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.faq .faq-container .faq-item:last-child {
-  margin-bottom: 0;
-}
-
-.faq .faq-container .faq-item h3 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 0 0 0;
-  transition: 0.3s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.faq .faq-container .faq-item h3 .num {
-  color: var(--primary-color);
-  padding-right: 5px;
-}
-
-.faq .faq-container .faq-item h3:hover {
-  color: var(--primary-color);
-}
-
-.faq .faq-container .faq-item .faq-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: 0.3s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.faq .faq-container .faq-item .faq-content p {
-  margin-bottom: 0;
-  overflow: hidden;
-}
-
-.faq .faq-container .faq-item .faq-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 16px;
-  line-height: 0;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--primary-color);
-}
-
-.faq .faq-container .faq-active h3 {
-    color: var(--primary-color);
-}
-
-.faq .faq-container .faq-active .faq-content {
-  grid-template-rows: 1fr;
-  visibility: visible;
-  opacity: 1;
-  padding-top: 10px;
-}
-
-.faq .faq-container .faq-active .faq-toggle {
-  transform: rotate(90deg);
-  color: var(--primary-color);
-}
-.faq-banner{
-  background-image: url('/images/faq-banner.jpg');
-}
-</style>
+  <link rel="stylesheet" href="./css/edu-bridge.css">
+  <link rel="stylesheet" href="./css/faq.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDPBQK4F"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
   <header class="bg-white header-fixed fixed-top" id="header">
     <nav class="navbar navbar-expand-lg px-2">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="index.html">
-                <img src="./images/EduBridge-logo.png" width="300" class="img-cover" alt="">
+            <a class="navbar-brand logo" href="/">
+                <img src="./assets/images/logo-edubridge.webp" width="300" class="img-cover" alt="Przejdź do strony głównej">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -145,74 +49,60 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="process.html">Proces Aplikacyjny</a>
+                        <a class="nav-link" aria-current="page" href="/proces-aplikacyjny">Proces Aplikacyjny</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="offering.html">Usługi</a>
+                        <a class="nav-link " href="/uslugi">Usługi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="professional-cv.html">Profesjonalne CV</a>
+                        <a class="nav-link" href="/profesjonalne-cv">Profesjonalne CV</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active-menu" href="faq.html">FAQ</a>
+                        <a class="nav-link active-menu" href="/faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blogs.html">Blog</a>
+                        <a class="nav-link" href="/blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">O nas</a>
+                        <a class="nav-link" href="/o-nas">O nas</a>
                     </li>
                 </ul>
                 <div>
-                    <a type="button" class="btn btn-primary" href="contact.html">Skontaktuj się z nami</a>
+                    <a type="button" class="btn btn-primary" href="/kontakt">Skontaktuj się z nami</a>
                 </div>
             </div>
         </div>
     </nav>
 </header>
- <!-- Banner section -->
  <section class="banner-section">
   <div class="faq-banner banner-bg-content inner-page-banner">
     <div class="banner-content p-2 text-center align-items-center">
       <h1 class="mb-5">Najczęściej zadawane pytania</h1>
       <p class="sub-title">Masz pytanie? My mamy odpowiedź</p>
-      <!-- <div class="banner-btn-group">
-          <button type="button" class="btn btn-primary">Apply Now <i class="bi bi-arrow-right"></i></button>
-          <button type="button" class="btn btn-primary">Explore Courses <i class="bi bi-arrow-right"></i></button>
-      </div> -->
-      <!-- <div class="page-name-banner">
-        FAQs
-      </div> -->
   </div>
   </div>
-  
 </section>
 
-<!-- Faq Section -->
 <section class="faq-9 faq section light-background pt-80 pb-80" id="faq">
     <div class="container">
       <div class="row">
-
         <div class="col-lg-5" data-aos="fade-up">
           <h2 class="faq-title">Masz pytanie? Sprawdź nasze FAQ</h2>
-          <!-- <p class="faq-description">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p> -->
           <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
             <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
             </svg>
           </div>
         </div>
-
         <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
           <div class="faq-container">
-
             <div class="faq-item faq-active">
               <h3>1. Czy EduBridge pomaga w przygotowaniu aplikacji zarówno na studia licencjackie, jak i magisterskie?</h3>
               <div class="faq-content">
                 <p>Tak, wspieramy aplikacje na wszystkich poziomach edukacji wyższej – od studiów licencjackich, przez magisterskie, aż po programy doktoranckie. Dostosowujemy nasze usługi do specyfiki kierunku i wymagań uczelni, zapewniając kompleksowe wsparcie na każdym etapie procesu.</p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
+            </div>
 
             <div class="faq-item">
               <h3>2. Jak długo trwa proces współpracy przy aplikacji na studia za granicą?</h3>
@@ -220,31 +110,28 @@
                 <p>Czas trwania współpracy zależy od zakresu usług i terminów aplikacyjnych. Przygotowanie pełnej aplikacji na uczelnię może zająć od kilku tygodni do kilku miesięcy. W przypadku pojedynczych usług, takich jak CV czy personal statement, proces może zostać zakończony nawet w ciągu kilku dni.</p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
-
+            </div>
             <div class="faq-item">
               <h3>3. Czy muszę skorzystać z pełnego pakietu usług, czy mogę wybrać tylko jedną z nich?</h3>
               <div class="faq-content">
                 <p>Nie musisz korzystać z pełnego pakietu – dostosowujemy naszą pomoc do Twoich indywidualnych potrzeb. Możesz wybrać tylko jedną usługę, taką jak przygotowanie CV, statementu lub pomoc w wyborze uczelni. Jesteśmy elastyczni i wspieramy Cię dokładnie tam, gdzie tego potrzebujesz.</p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
-
+            </div>
             <div class="faq-item">
               <h3>4. W jakich krajach pomagacie aplikować na studia?</h3>
               <div class="faq-content">
                 <p>Specjalizujemy się w aplikacjach na studia anglojęzyczne w takich krajach jak Wielka Brytania, Holandia, USA, Irlandia, Kanada i inne. Dzięki doświadczeniu pomagamy skutecznie przygotować dokumenty i aplikacje zgodne z wymaganiami wybranych uczelni.</p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
-
+            </div>
             <div class="faq-item">
               <h3>5. Jakie dokumenty są potrzebne do aplikacji na studia za granicą?</h3>
               <div class="faq-content">
                 <p>Wymagane dokumenty mogą się różnić w zależności od kraju i uczelni, ale najczęściej są to: CV, personal statement lub list motywacyjny, referencje akademickie, transkrypcje ocen, a czasem również portfolio lub wyniki egzaminów językowych (np. IELTS, TOEFL). Pomagamy w przygotowaniu każdego z tych dokumentów, dostosowując je do specyfiki wybranej uczelni.</p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
+            </div>
             <div class="faq-item">
               <h3>6. Czy pomagacie w przygotowaniu do rozmów kwalifikacyjnych na studia?</h3>
               <div class="faq-content">
@@ -259,80 +146,65 @@
                 <p>Tak, wiele uczelni pozwala na aplikowanie warunkowo, zanim uzyskasz ostateczne wyniki matury. W takim przypadku może być konieczne przedstawienie prognozowanych wyników lub raportów z ocen końcowych z wcześniejszych lat. Pomagamy w przygotowaniu aplikacji w taki sposób, aby spełniała wymagania uczelni nawet przed uzyskaniem ostatecznych wyników.</p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
+            </div>
             <div class="faq-item">
               <h3>8. Czy mogę aplikować na studia, jeśli nie mam certyfikatu językowego?</h3>
               <div class="faq-content">
                 <p>Tak, wiele uczelni umożliwia aplikowanie warunkowe, co oznacza, że możesz przedstawić certyfikat językowy (np. IELTS, TOEFL) w późniejszym terminie.</p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
+            </div>
             <div class="faq-item">
               <h3>9. Jakie wsparcie oferujecie po zaakceptowaniu oferty przez uczelnię?</h3>
               <div class="faq-content">
                 <p>Po akceptacji oferty pomagamy w finalizacji formalności, takich jak kwestie wizowe, czy zakwaterowanie. Dodatkowo udzielamy praktycznych porad dotyczących życia na studiach za granicą i odpowiadamy na pytania, abyś czuł się w pełni przygotowany na nowy etap swojej edukacji.</p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
+            </div>
             <div class="faq-item">
               <h3>10. Ile kosztują Wasze usługi?</h3>
               <div class="faq-content">
                 <p>Koszty naszych usług zależą od zakresu wsparcia i rodzaju aplikacji. Oferujemy elastyczne pakiety – od pojedynczych usług, takich jak przygotowanie CV, po kompleksową pomoc w całym procesie aplikacyjnym. Skontaktuj się z nami, aby uzyskać szczegółową wycenę.</p>
               </div>
               <i class="faq-toggle bi bi-chevron-right"></i>
-            </div><!-- End Faq item-->
-
+            </div>
           </div>
         </div>
-
       </div>
     </div>
-  </section><!-- /Faq Section -->
-
-
+  </section>
   <footer class="bg-primary">
     <div class="footer-wrapper container">
         <div class="footer-logo">
-            <img src="./images/EduBridge-white-logo.png" class="w-100" alt="">
+            <img src="./assets/images/logo-edubridge-white.webp" class="w-100" alt="">
         </div>
         <div class="row text-white">
-          
-            <div class="col-lg-12 quick-links">
-                <!-- <h6>Quick Links</h6> -->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="process.html">Proces Aplikacyjny</a></li>
-                    <li><a href="offering.html">Usługi</a></li>
-                    <li><a href="professional-cv.html">Profesjonalne CV</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="blogs.html">Blog</a></li>
-                    <li><a href="about-us.html">O nas</a></li>
-                    <li><a href="contact.html">Skontaktuj się z nami</a></li>
-                </ul>
-            </div>
+          <div class="col-lg-12 quick-links">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/proces-aplikacyjny">Proces Aplikacyjny</a></li>
+              <li><a href="/uslugi">Usługi</a></li>
+              <li><a href="/profesjonalne-cv">Profesjonalne CV</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/o-nas">O nas</a></li>
+              <li><a href="/kontakt">Skontaktuj się z nami</a></li>
+            </ul>
+          </div>
         </div>
     </div>
     <div class="footer-copyright container">
-        <p>EduBridge © <span id="current-year"></span> | Wszystkie prawa zastrzeżone |  <a href="terms-condition.html">Regulamin</a> | <a href="privacy-policy.html">Polityka Prywatności</a></p>
+        <p>EduBridge © <span id="current-year"></span> | Wszystkie prawa zastrzeżone |  <a href="/regulamin">Regulamin</a> | <a href="/polityka-prywatnosci">Polityka Prywatności</a></p>
     </div>
 </footer>
-
-<!-- Scroll Top -->
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-double-up"></i> Powrót na górę strony</a>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
-<!-- Vendor JS Files -->
-<!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-<!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
-<!-- Main JS File -->
 <script src="./assets/js/main.js"></script>
 </body>
 </html>
