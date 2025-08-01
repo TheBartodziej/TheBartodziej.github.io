@@ -1,29 +1,29 @@
 .blog-posts article {
   background-color: var(--surface-color);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 32px;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
 .blog-posts .post-img {
   max-height: 240px;
-  margin: -30px -30px 15px -30px;
+  margin: -32px -32px 16px -32px;
   overflow: hidden;
 }
 
 .blog-posts .post-category {
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .blog-posts .title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 24px 0;
   line-height: normal;
 }
 
@@ -38,19 +38,19 @@
 }
 
 .blog-posts .post-author-img {
-  width: 50px;
+  width: 48px;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .blog-posts .post-author {
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   line-height: normal;
 }
 
 .blog-posts .post-date {
-  font-size: 14px;
+  font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin-bottom: 0;
   line-height: normal;

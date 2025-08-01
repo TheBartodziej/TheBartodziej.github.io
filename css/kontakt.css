@@ -13,7 +13,7 @@
 
 @media (max-width: 767.98px) {
   .contact .info-box h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -63,14 +63,14 @@
 }
 
 .contact .info-item .content h4 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
 .contact .info-item .content p {
-  margin-bottom: 0.25rem;
-  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 .contact .info-item .content p:last-child {
@@ -82,7 +82,7 @@
   padding: 3rem;
   border-radius: 1rem;
   height: 100%;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 992px) {
@@ -92,7 +92,7 @@
 }
 
 .contact-form-header {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 48px;
 }
@@ -105,7 +105,7 @@
 
 @media (max-width: 768px) {
   .contact .contact-form .contact-form-header {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -116,7 +116,7 @@
 
 .contact .contact-form .form-control,
 .contact .contact-form .form-select {
-  padding: 0.875rem 1.25rem;
+  padding: 1rem 1.5rem;
   border-color: color-mix(in srgb, var(--default-color), transparent 90%);
   border-radius: 0.5rem;
   background-color: color-mix(in srgb, var(--surface-color) 90%, white 5%);
@@ -145,5 +145,5 @@
 }
 
 .contact .contact-form .btn i {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }

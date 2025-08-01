@@ -1,5 +1,5 @@
 .faq .faq-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--heading-color);
@@ -18,9 +18,9 @@
 .faq .faq-container .faq-item {
   background-color: #25366914;
   position: relative;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 16px;
   overflow: hidden;
 }
 
@@ -41,7 +41,7 @@
 
 .faq .faq-container .faq-item h3 .num {
   color: var(--primary-color);
-  padding-right: 5px;
+  padding-right: 8px;
 }
 
 .faq .faq-container .faq-item h3:hover {
@@ -63,8 +63,8 @@
 
 .faq .faq-container .faq-item .faq-toggle {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 24px;
+  right: 24px;
   font-size: 16px;
   line-height: 0;
   transition: 0.3s;
@@ -83,7 +83,7 @@
   grid-template-rows: 1fr;
   visibility: visible;
   opacity: 1;
-  padding-top: 10px;
+  padding-top: 16px;
 }
 
 .faq .faq-container .faq-active .faq-toggle {
@@ -96,17 +96,17 @@
 .faq-arrow-with-button{
   display: flex;
   align-items: flex-end;
-  gap: 10px;
+  gap: 16px;
   margin-bottom: 1rem;
 }
 
 .faq-arrow-with-button .btn {
-    margin-top: 20px;
+    margin-top: 24px;
     position: relative;
 }
 
 .faq-arrow-with-button .btn {
     position: relative;
-    top: 10px;
+    top: 16px;
     margin-top: 0;
 }
