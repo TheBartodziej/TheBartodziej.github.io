@@ -75,47 +75,54 @@
         </div>
     </nav>
 </header>
- <section class="banner-section">
+<section class="banner-section" aria-label="Baner ofertowy">
   <div class="offering-banner banner-bg-content inner-page-banner">
     <div class="banner-content p-2">
       <h1 class="mb-5">Razem zaplanujemy Twoją drogę do sukcesu</h1>
       <p class="sub-title">Opowiedz nam o swoich planach, a my pomożemy Ci je zrealizować</p>
-  </div>
+    </div>
   </div>
 </section>
-<section id="contact" class="contact section light-background pt-80 pb-80">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row g-4 g-lg-5">
-        <div class="col-lg-12">
-          <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-            <p class="contact-form-header">Skontaktuj się z nami i skorzystaj z pierwszej darmowej konsultacji!</p>
-            <form id="contactForm">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="firstName" class="form-control" placeholder="Imię" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="text" name="lastName" class="form-control" placeholder="Nazwisko" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="email" name="email" class="form-control" placeholder="Email" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="text" name="phoneNumber" class="form-control" placeholder="Numer telefonu" required>
-                </div>
-                <div class="col-12">
-                  <textarea name="description" class="form-control" rows="6" placeholder="Jak możemy pomóc?" required></textarea>
-                </div>
-                <div class="col-12 text-center">
-                  <button type="submit" class="btn btn-primary" id="submit-contact-form-btn">Wyślij</button>
-                </div>
+
+<section id="contact" class="contact section light-background pt-80 pb-80" aria-labelledby="contact-title">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-12">
+        <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+          <p id="contact-title" class="contact-form-header">Skontaktuj się z nami i skorzystaj z pierwszej darmowej konsultacji!</p>
+          <form id="contactForm" aria-describedby="contact-title">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <label for="firstName" class="visually-hidden">Imię</label>
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Imię" required aria-required="true" />
               </div>
-            </form>
-          </div>
+              <div class="col-md-6">
+                <label for="lastName" class="visually-hidden">Nazwisko</label>
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Nazwisko" required aria-required="true" />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="visually-hidden">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required aria-required="true" />
+              </div>
+              <div class="col-md-6">
+                <label for="phoneNumber" class="visually-hidden">Numer telefonu</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="Numer telefonu" required aria-required="true" />
+              </div>
+              <div class="col-12">
+                <label for="description" class="visually-hidden">Jak możemy pomóc?</label>
+                <textarea id="description" name="description" class="form-control" rows="6" placeholder="Jak możemy pomóc?" required aria-required="true"></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary" id="submit-contact-form-btn">Wyślij</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   <footer class="bg-primary">
     <div class="footer-wrapper container">
         <div class="footer-logo">
