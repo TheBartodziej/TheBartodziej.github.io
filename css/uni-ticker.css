@@ -1,0 +1,27 @@
+.news-ticker {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 10px 0;
+}
+
+.ticker-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 30s linear infinite;
+}
+
+.ticker-track img {
+  height: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
