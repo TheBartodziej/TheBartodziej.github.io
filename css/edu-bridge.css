@@ -653,6 +653,7 @@ header .navbar-nav .nav-link {
 
 .steps-wrapper {
   scroll-margin-top: 104px;
+  text-align: justify;
 }
 .child-steps h5 {
   text-indent: 6rem;
@@ -693,13 +694,9 @@ header .navbar-nav .nav-link {
   opacity: 1;
 }
 
-.how-it-works-section {
-  /* background-color: #081336; */
-}
 .timeline-steps-wrapper .timeline-steps-row {
   display: flex;
   justify-content: center;
-  /* color: #ffffff; */
   margin-bottom: 24px;
 }
 
@@ -793,6 +790,6 @@ header .navbar-nav .nav-link {
 
 .timeline-description-text {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.2;
 }
