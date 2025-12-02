@@ -8,20 +8,11 @@
 .ticker-track {
   display: flex;
   gap: 20px;
-  animation: scroll 20s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .ticker-track img {
-  height: 100px;
+  height: 320px;
   object-fit: cover;
   flex-shrink: 0;
 }
-
-/* @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-} */
