@@ -12,7 +12,7 @@
 }
 
 .ticker-track img {
-  height: 320px;
+  height: 110px;
   object-fit: cover;
   flex-shrink: 0;
 }
